@@ -29,7 +29,7 @@ function otherMouse(dataReceived) {
 // when the mouse is moved, draw it and send a message to the server
 function mouseMoved() {
   fill(51, 255, 51);
-  circle(mouseX, mouseY, 15);
+  circle(mouseX, mouseY, 20);
   noStroke();
 
   // create an object containing the mouse position
