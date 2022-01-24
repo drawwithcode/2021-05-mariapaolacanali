@@ -21,13 +21,13 @@ clientSocket.on("mouseBroadcast", otherMouse);
 // Callback function called when a new message comes from the server
 // Data parameters will contain the received data
 function otherMouse(dataReceived) {
-  fill("yellow");
+  fill(255, 102, 255);
   circle(dataReceived.x, dataReceived.y, 20);
 }
 
 // when the mouse is moved, draw it and send a message to the server
 function mouseMoved() {
-  fill("red");
+  fill(255, 255, 102);
   circle(mouseX, mouseY, 15);
   noStroke();
 
@@ -46,10 +46,10 @@ function mouseMoved() {
 // create the artboard
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(220);
+  background(32);
   //text
   noStroke();
-  fill(0);
+  fill(255);
   textSize(50);
   text("start", 450, 160);
   text("end", 1039, 670);
@@ -102,10 +102,10 @@ function draw() {
 }
 
 function mousePressed() {
-  background(220);
+  background(32);
   //text
   noStroke();
-  fill(0);
+  fill(255);
   textSize(50);
   text("start", 450, 160);
   text("end", 1039, 670);
