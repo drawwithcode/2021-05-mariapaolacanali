@@ -1,9 +1,7 @@
 // Create a new connection using socket.io (imported in index.html)
 // make sure you added the following line to index.html:
+//const { transcode } = require("buffer");
 
-const { transcode } = require("buffer");
-
-// <script src="/socket.io/socket.io.js"></script>
 let clientSocket = io();
 
 // define the function that will be called on a new newConnection
